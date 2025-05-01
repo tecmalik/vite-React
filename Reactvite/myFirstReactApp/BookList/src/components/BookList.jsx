@@ -57,7 +57,7 @@ return(
     <div id={style.booklist}>
         <h2 className= {style.title}>Books to Read</h2>
         <ul>
-            { books.map((book,index)=>(
+            { filteredBooks.map((book,index)=>(
 
                 <li key = {index}>
                     <span className={style.name}>{book}</span>

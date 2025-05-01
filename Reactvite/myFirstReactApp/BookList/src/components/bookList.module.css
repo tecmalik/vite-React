@@ -59,12 +59,12 @@ h1, h2{
     margin: 20px 10px;
 }
 
-#bookList li:hover{
+#bookList li:hover{padding-left :20px;
     border-color: #9361bf;
 }
 
 .delete{
-    float: right;
+    float: right; 
     background: #9361bf;
     padding: 6px;
     border-radius: 4px;
