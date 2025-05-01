@@ -47,11 +47,11 @@ return(
     <header>
         <div id = {style.pageBanner}>
             <h1 className = {style.title}> Book Collections</h1>
-            
-      <p>Books</p>
-      <form id={style.searchBooks}>
-        <input type="text" placeholder="Search books..." onKeyUp={handleFilterBooks}/>
-      </form>
+                    
+            <p>Books</p>
+            <form id={style.searchBooks}>
+                <input type="text" placeholder="Search books..." onKeyUp={handleFilterBooks}/>
+            </form>
         </div>
     </header>
     <div id={style.booklist}>

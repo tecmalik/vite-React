@@ -26,7 +26,7 @@ h1, h2{
 
 }
 
-#pageBanner h1, #page-banner p{
+#pageBanner h1, #pageBanner p{
     width: 100%;
     text-align: center;
     margin: 10px 0;
