@@ -43,17 +43,17 @@ const BookList = () =>{
 
 return(
 
-    <div id= {style.wrapper}>
-    <header>
-        <div id = {style.pageBanner}>
-            <h1 className = {style.title}> Book Collections</h1>
-                    
-            <p>Books</p>
-            <form id={style.searchBooks}>
-                <input type="text" placeholder="Search books..." onKeyUp={handleFilterBooks}/>
-            </form>
-        </div>
-    </header>
+<div id= {style.wrapper}>
+        <header>
+            <div id = {style.pageBanner}>
+                <h1 className = {style.title}> Book Collections</h1>
+                        
+                <p>Books</p>
+                <form id={style.searchBooks}>
+                    <input type="text" placeholder="Search books..." onKeyUp={handleFilterBooks}/>
+                </form>
+            </div>
+        </header>
     <div id={style.booklist}>
         <h2 className= {style.title}>Books to Read</h2>
         <ul>
@@ -68,7 +68,7 @@ return(
                 ))
             }
         
-           </ul>
+        </ul>
     </div>
     <form onSummit = {handleSubmit}  id={style.addBook}>
         <input type="text" placeholder="Add a book..." onChange = {collectBookTitle} /> 
