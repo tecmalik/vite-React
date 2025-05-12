@@ -1,14 +1,15 @@
 
-// import Login from './components/auth/login'
-import SignUp from './components/auth/signUp/SignUp.jsx'
+import Login from './components/auth/login';
+import SignUp from './components/auth/signUp/SignUp.jsx';
+import router from './routers/routes.js';
+import { BrowserRouter } from 'react-router';
 
 
 function App() {
 
   return (
     <>
-     {/* <Login/> */}
-     <SignUp/>
+     <RouterProvider router= {router}>  </RouterProvider>
     </>
   )
 }

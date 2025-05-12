@@ -2,6 +2,7 @@ import React from "react";
 import CustomButton from "../../../reusable/CustomButton ";
 import {useState} from 'react'
 import {useSignUpMutation} from '../../../service/userAuthApi';
+import {Link} from "react-router";
 
 
 const SignUp = () => { 
@@ -71,7 +72,11 @@ const SignUp = () => {
                 onChange = {handleInput }
                 placeholder = "password" 
                 required ></input>
+
+                <Link to ={login}> Login</Link>
+
                 <CustomButton text="SignUp"/>
+
 
             </form>
         </div>

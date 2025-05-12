@@ -1,6 +1,7 @@
 import React from "react";
 import CustomButton from "../../../reusable/CustomButton ";
 import style from './login.module.css'
+import {Link} from 'react-router';
 
 const Login =()=> {
 
@@ -30,6 +31,8 @@ const Login =()=> {
                 for="password">Password</label>
                 <br></br>
                 <input type="text" className ="password" onClick={handelChange} value = "password" required></input>
+
+                <Link to = "/Login"> Login </Link>
                 <CustomButton text="SugnUp"/>
 
             </form>
