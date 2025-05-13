@@ -2,10 +2,10 @@ import React from "react";
 import CustomButton from "../../../reusable/CustomButton ";
 import {useState} from 'react'
 import {useSignUpMutation} from '../../../service/userAuthApi';
-import {Link} from "react-router";
-
+import {Link,useNavigate} from "react-router"; 
 
 const SignUp = () => { 
+    const navigate = useNavigate() 
 
     const userDetails = {
         email : "",
@@ -24,14 +24,18 @@ const SignUp = () => {
     };
     const submitHandler = async(e)=>{
         e.preventDefault();
+
         try{
          const response = await signUp(userData).unwrap();
         console.log(response)
+        if(response.success == true){
+            navigate("/login")
+        }
         }catch(error){
 
          console.log(error)
 
-        };
+        }
         
     }
 
@@ -73,7 +77,7 @@ const SignUp = () => {
                 placeholder = "password" 
                 required ></input>
 
-                <Link to ={login}> Login</Link>
+                <Link to ="./login"> Login</Link>
 
                 <CustomButton text="SignUp"/>
 

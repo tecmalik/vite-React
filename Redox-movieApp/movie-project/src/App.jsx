@@ -1,16 +1,17 @@
 
-import Login from './components/auth/login';
+import Login from './components/auth/login/Login.jsx';
 import SignUp from './components/auth/signUp/SignUp.jsx';
-import router from './routers/routes.js';
-import { BrowserRouter } from 'react-router';
+import router from './routers/routes';
+import { RouterProvider } from 'react-router';
+
 
 
 function App() {
 
   return (
-    <>
-     <RouterProvider router= {router}>  </RouterProvider>
-    </>
+    // <>
+     <RouterProvider router= {router}></RouterProvider>
+    // </>
   )
 }
 
