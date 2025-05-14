@@ -4,6 +4,7 @@ import { Outlet } from "react-router"
 import SideBar from "../sideBar/SideBar"
 import Footer from "../footer/Footer"
 import style from "./layout.module.css"
+import Header from "../header/Header"
 
 
 const Layout =()=>{
