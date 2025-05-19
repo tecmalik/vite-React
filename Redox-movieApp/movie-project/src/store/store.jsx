@@ -1,4 +1,4 @@
-import {configureStore} from "@reduxjs/toolkit" ;
+import { configureStore } from "@reduxjs/toolkit" ;
 import { userAuthApiSlice } from "../service/userAuthApi";
 import { movieApi } from "../service/movieApi";
 import { setupListeners} from '@reduxjs/toolkit/query';

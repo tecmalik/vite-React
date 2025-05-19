@@ -7,7 +7,7 @@ export const userAuthApiSlice = createApi({ // inbuilt api that takes in am obje
     reducerPath : "userAuth",
     baseQuery :fetchBaseQuery ({baseUrl:`${url}`}), // inital state from the end-point
     endpoints : (builder)=>({  //a function that takes in builder and returns an object
-        signUp: builder.mutation({ // firt instruction
+        signUp: builder.mutation({ // first instruction
             query:(data)=>({
                 url : "signup/users", // what you have in your backend
                 method : "Post",
