@@ -12,7 +12,7 @@ export const userAuthApiSlice = createApi({ // inbuilt api that takes in am obje
                 url : "signup/users", // what you have in your backend
                 method : "Post",
                 header:{"content-Type" : "application/json"},
-                body : data //the one h=that is cling through your input
+                body : data //the one hthat is calling through your input
 
             })
         })
