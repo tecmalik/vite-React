@@ -1,7 +1,7 @@
 import React from "react";
 import CustomButton from "../../../reusable/CustomButton ";
 import style from './login.module.css'
-import {Link} from 'react-router';
+import {Link} from 'react-router-dom';
 import {useState} from 'react';
 
 const Login =()=> {
@@ -13,7 +13,7 @@ const Login =()=> {
     const [loginData,setLoginData] = useState(loginDetails);
 
     const handelChange = (e) => {
-        const {name , value} = e.terget
+        const {name , value} = e.target
         setLoginData((prev) => ({...prev, [name]: value.trim()}))
     };
 
@@ -24,14 +24,20 @@ const Login =()=> {
             <h1>Login</h1>
             <form action="" >
                 <input 
-                type="text" 
-                name = "text"
+                type="email" 
+                name = "email"
                 className = {style.emailBox}
+                value = {loginData.email}
+                onchange={handelChange}
                 required></input><br></br>
                 <label 
                 for="password">Password</label>
                 <br></br>
-                <input type="text" className ={style.password} onClick={handelChange} value = "password" required></input>
+                <input type="password" 
+                className ={style.password} 
+                onClick={handelChange} 
+                value = {loginData.password} 
+                required></input>
 
                 <Link to = "/signup"> Signup</Link>
                 <CustomButton text = "Login"/>

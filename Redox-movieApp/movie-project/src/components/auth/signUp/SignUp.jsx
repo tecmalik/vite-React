@@ -28,7 +28,7 @@ const SignUp = () => {
         try{
          const response = await signUp(userData).unwrap();
         console.log(response)
-        if(response.success == true){
+        if(response.success === true){
             navigate("/login")
         }
         }catch(error){
@@ -63,7 +63,7 @@ const SignUp = () => {
                 </label>
                 <br></br>
                 <input 
-                type="nin" 
+                type="text" 
                 name ="nin" 
                 onChange = {handleInput }
                 placeholder = "enter your NIN" 
@@ -77,7 +77,7 @@ const SignUp = () => {
                 placeholder = "password" 
                 required ></input>
 
-                <Link to ="./login"> Login</Link>
+                <Link to ="/login"> Login</Link>
 
                 <CustomButton text="SignUp"/>
 
