@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import {dummyApi} from "../services/dummyjsonApi";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import { useGetAllproductQuery } from "../services/dummyjsonApi";
-import { fakeStoreApi } from "../services/fakestoreApi";
+import { fakeStoreApi } from "../services/FakestoreApi";
 
 export const store = configureStore({
     reducer:{

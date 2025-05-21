@@ -2,7 +2,7 @@ import React from "react";
 import CustomButton from "../../../reusable/CustomButton ";
 import {useState} from 'react'
 import {useSignUpMutation} from '../../../service/userAuthApi';
-import {Link,useNavigate} from "react-router"; 
+import {Link,useNavigate} from "react-router- dom"; 
 
 const SignUp = () => { 
     const navigate = useNavigate() 

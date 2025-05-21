@@ -7,7 +7,7 @@ const ImageBasedUrl = 'https://fakestoreapi.com/products/';
 const fakeProductCard = (props) => {
     const {data,isLoading} = props.data
     console.log(data)
-    console.log(isLoading)\ 
+    console.log(isLoading)
     if(isLoading){
         return(
             <div>loading...</div>
