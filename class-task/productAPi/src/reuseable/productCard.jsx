@@ -22,8 +22,8 @@ const ProductCard = (props) => {
                     <img src={`${result.images}`} alt ="" />
                     <p>{result.overview}</p>
                     <p>{result.title}</p>
-                    <p>{result.vote_count}</p>
-                    <p>{result.vote_average}</p>
+                    <p>{result.price}</p>
+                    <p>{result.description}</p>
 
                 </div>
             ))

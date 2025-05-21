@@ -1,7 +1,7 @@
 import React from 'react'
 import { UNSAFE_hydrationRouteProperties } from 'react-router'
 
-const ImageBasedUrl = 'https://fakestoreapi.com/products/';
+const ImageBasedUrl = 'https://fakestoreapi.com/products';
 
 
 const fakeProductCard = (props) => {
@@ -23,8 +23,9 @@ const fakeProductCard = (props) => {
                     <img src={`${result.images}`} alt ="" />
                     <p>{result.overview}</p>
                     <p>{result.title}</p>
-                    <p>{result.vote_count}</p>
-                    <p>{result.vote_average}</p>
+                    <p>{result.price}</p>
+                    <p>{result.description}</p>
+                   
 
                 </div>
             ))
