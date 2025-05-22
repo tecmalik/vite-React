@@ -4,21 +4,23 @@ import style from "./layout.module.css"
 import Header from '../header/Header'
 import SideBar from '../sidebar/sidebar'
 import Footer from '../footer/Footer'
-import { Link } from "react-router"
 
 
 const Layout =()=>{
     return(
-        <div> 
+        <div className="mainBody">
+
+            <div className ={style.layOutWrapper}> 
             <Header/>
             <div className = {style.sideBar}> 
                 
                 <SideBar/>
                 <Outlet/>
             </div>
-            <footer/>
-            <Footer/>      
+                <Footer/>      
+            </div>
         </div>
+        
         
     )
 }
