@@ -2,16 +2,16 @@ import { configureStore } from "@reduxjs/toolkit";
 import {dummyApi} from "../services/dummyjsonApi";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import { useGetAllproductQuery } from "../services/dummyjsonApi";
-import { fakeStoreApi } from "../services/FakestoreApi";
+import { FakeStoreApi } from "../services/FakestoreApi";
 
 export const store = configureStore({
     reducer:{
         [dummyApi.reducerPath] : dummyApi.reducer,
-        [fakeStoreApi.reducerPath] : fakeStoreApi.reducer
+        [FakeStoreApi.reducerPath] : FakeStoreApi.reducer
     },
     middleware:(getDefaultMiddleware)=>(
         getDefaultMiddleware().concat (dummyApi.middleware, 
-            fakeStoreApi.middleware)
+            FakeStoreApi.middleware)
     )
 })
 

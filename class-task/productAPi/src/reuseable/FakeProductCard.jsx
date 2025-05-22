@@ -20,12 +20,10 @@ const fakeProductCard = (props) => {
             data?.map((result)=>(
                 
                 <div key={result.id}>
-                    <img src={`${result.images}`} alt ="" />
-                    <p>{result.overview}</p>
+                    <img src={`${result.image}`} alt ="" />
                     <p>{result.title}</p>
                     <p>{result.price}</p>
                     <p>{result.description}</p>
-                   
 
                 </div>
             ))

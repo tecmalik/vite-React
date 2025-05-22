@@ -1,6 +1,6 @@
 import React from 'react'
-import { useGetAllFakeProductQuery} from '../../services/dummyjsonApi';
-import fakeProductCard from "../../reuseable/FakeProductCard";
+import { useGetAllFakeProductQuery} from '../../services/fakestoreApi';
+import FakeProductCard from "../../reuseable/FakeProductCard";
 
 
 const AllFakeProduct=()=> {
@@ -9,7 +9,7 @@ const AllFakeProduct=()=> {
 
     return(
         <div> 
-            <fakeProductCard data = {data} />
+            <FakeProductCard data = {data} />
         </div>
     )
 }
