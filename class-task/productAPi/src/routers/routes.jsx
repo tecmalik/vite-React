@@ -1,13 +1,13 @@
 import {createBrowserRouter} from "react-router";
 import DummyjsonApi from "../components/apis/DummyjsonApi"
 import FakeStoreApi from "../components/apis/FakeStoreApi"
-// import SideBar from "../components/sidebar/sidebar";
+import Layout from "../components/layout/Layout";
 
 
 
 const router = createBrowserRouter([
     {
-        path : "/fakeProduct",
+        path : "",
         element : <Layout/> 
     },
     {
