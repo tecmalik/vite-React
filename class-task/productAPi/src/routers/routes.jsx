@@ -18,6 +18,7 @@ const router = createBrowserRouter([
         path : "/fakeProduct",
         element : <FakeStoreApi/> 
     }
+    
 ])
 
 export default router;
